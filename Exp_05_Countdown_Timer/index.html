@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exp 5 - Countdown Timer</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 30px; }
+    .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border: 1px solid #ccc; border-radius: 6px; text-align: center; }
+    h1 { font-size: 22px; }
+    input { padding: 6px; width: 250px; }
+    button { padding: 6px 14px; margin: 4px 2px; cursor: pointer; }
+    #timer { margin-top: 15px; font-size: 26px; font-weight: bold; padding: 10px; background: #eef; border: 1px solid #99c; }
+    .note { font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown Timer</h1>
+    End date and time: <input type="text" id="endDate" placeholder="e.g. Dec 31, 2026 23:59:59"><br>
+    <p class="note">Format: any date string understood by Date.parse(), e.g. "Dec 31, 2026 23:59:59" or "2026-12-31T23:59:59"</p>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <div id="timer">--</div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

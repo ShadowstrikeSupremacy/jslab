@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exp 7 - Arrays and Array Objects</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 30px; }
+    .container { max-width: 650px; margin: auto; background: #fff; padding: 20px; border: 1px solid #ccc; border-radius: 6px; }
+    h1 { font-size: 22px; text-align: center; }
+    h3 { margin-bottom: 5px; }
+    .section { border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+    input { padding: 6px; margin: 4px 0; width: 150px; }
+    button { padding: 6px 14px; margin: 4px 2px; cursor: pointer; }
+    .result { margin-top: 8px; padding: 8px; background: #eef; border: 1px solid #99c; min-height: 18px; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Arrays and Array Objects</h1>
+
+    <div class="section">
+      <h3>Step 1 and 2: Create Array of Given Size</h3>
+      Size of array: <input type="number" id="arraySize">
+      <button onclick="createArray()">Create Array</button>
+    </div>
+
+    <div class="section">
+      <h3>Step 3: Append an Object to the Array</h3>
+      Name: <input type="text" id="objName">
+      Age: <input type="number" id="objAge"><br>
+      <button onclick="appendObject()">Append Object (push)</button>
+      <button onclick="prependObject()">Add Object at Start (unshift)</button>
+    </div>
+
+    <div class="section">
+      <h3>Step 4: Check with isArray()</h3>
+      <button onclick="checkIsArray()">Check isArray()</button>
+    </div>
+
+    <div>
+      <h3>Other Array Object Methods</h3>
+      <button onclick="removeLast()">pop()</button>
+      <button onclick="removeFirst()">shift()</button>
+    </div>
+
+    <div class="result" id="result"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
